@@ -1,12 +1,16 @@
-import './ExploreContainer.css';
+import { Link } from "react-router-dom";
+import "./ExploreContainer.css";
 
-interface ContainerProps { }
+interface ContainerProps {}
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <strong>Quizz Culture</strong>
+      <p>
+        Get started by either <Link to="/login">Logging In</Link> or
+        <Link to="/signup"> Signing Up</Link>
+      </p>
     </div>
   );
 };
